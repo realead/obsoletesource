@@ -1,5 +1,6 @@
 from setuptools import setup, find_packages, Extension
 from Cython.Build import cythonize
+from Cython.Distutils import build_ext
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
@@ -11,6 +12,7 @@ extensions = Extension(
 extensions = cythonize(extensions, compiler_directives={'language_level' : 3})
 
 kwargs = {
+      cmdclass:{'build_ext': build_ext},
       'name':'obsoletesource',
       'version':'0.1.0',
       'description':'a project',
