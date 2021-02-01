@@ -12,7 +12,7 @@ extensions = Extension(
 extensions = cythonize(extensions, compiler_directives={'language_level' : 3})
 
 kwargs = {
-      cmdclass:{'build_ext': build_ext},
+      'cmdclass':{'build_ext': build_ext},
       'name':'obsoletesource',
       'version':'0.1.0',
       'description':'a project',
