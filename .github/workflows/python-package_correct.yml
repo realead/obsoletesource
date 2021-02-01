@@ -27,7 +27,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip    
-        pip --global-option build --global-option --force .
+        pip install --global-option build --global-option --force .
         pip install pytest
     - name: Test with pytest
       run: |
