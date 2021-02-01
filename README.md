@@ -13,6 +13,6 @@ will fail for Python3.9 and later.
 
 Running istallation with 
 
-   pip install --global-option build --global-option --force https://github.com/realead/obsoletesource/zipball/master
+    pip install --global-option build --global-option --force https://github.com/realead/obsoletesource/zipball/master
   
 will trigger a recreation of stale c-file by cython.
